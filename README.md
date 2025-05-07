@@ -1,4 +1,4 @@
-# 📊 NGINX Access Log Parser to XLSX
+# 📊 NGINX Access Log Parser to Excel XLSX
 
 This Node.js script converts NGINX access log files into a structured Excel spreadsheet (`.xlsx`) for easier reading and analysis.
 
@@ -41,13 +41,4 @@ It matches substrings (e.g., "wpp" matches "/api/wpp/v1").
 
 ### Output
 
-After running the script, a .xlsx file will be generated:
-
-✅ XLSX file saved to: /same/folder/access.xlsx
-The output file will have the same name as the .log file, but with a .xlsx extension, and will be saved in the same directory.
-
-📄 Excel Output Format
-The spreadsheet will include the following columns:
-
-#### IP	Timestamp	Method	Path	Query Params	HTTP Version	Status	Bytes	Referer	User-Agent
-192.168.0.1	07/May/2025:10:00:00	GET	/example/path	id=123&user=test	1.1	200	512	http://referer.com	Mozilla/5.0 ...
+After running the script, a .xlsx file will be generated and saved to the same directory as the .log file with a excel column-ready .xlsx.
